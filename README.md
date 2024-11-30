@@ -1,7 +1,11 @@
 # PROJETO-ONG
-Um sistema de doações de interação com o usuário
+O **Sistema de Doação** é uma aplicação desenvolvida para facilitar o gerenciamento de Doações.
 
-O usuário se cadastra com seu NOME, EMAIL, TELEFONE e SENHA.
+## FUNCIONALIDADES
+- CADASTRO DE USUÁRIO.
+- ESCOLHA DE ITEM DE DOAÇÃO.
+- AGENDAMENTO DA DOAÇÃO.
 
-Logo após ele escolhe o tipo de item que irá doar.
-Depois escolhe a data da Doação.
+## TECNOLOGIAS UTILIZADAS
+**FRONTEND** = HTML, CSS, JS.
+  
