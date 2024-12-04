@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Doação</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/images/logo.jpg" alt="Logo">
+        </a>
+        <nav>
+            <a href="/index.html"><img src="/images/botao-de-inicio.png" alt="Icone casa">Home</a>
+            <a href="/page/sobre.html"><img src="/images/botao-de-informacao.png" alt="">Sobre</a>
+        </nav>
+        <button><a href="/page/cadastro.html" style="color: white;">Cadastrar</a></button>
+        <div class="menu">
+            <img src="/images/menu.png" alt="Menu Icon">
+        </div>
+    </header>
+
+    <div class="bg-form">
+        <main class="content-form" >
+            <!-- Seção de Cadastro -->
+            <section class="cadastro">
+                <div class="d-flex">
+                    <h2>Cadastro de Usuário</h2>
+                    <img src="/images/do-utilizador.png" alt="Icone Usuário">
+                </div>
+                <form id="form-cadastro">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
+    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone" required>
+    
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
+    
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+    
+            <!-- Seção de Escolha de Itens -->
+            <section class="doacao">
+                <div class="d-flex" >
+                    <h2>Escolha o Item para Doar</h2>
+                    <img src="/images/produtos.png" alt="Icone Itens">
+                </div>
+                <form id="form-doacao">
+                    <label for="tipo-item">Selecione o Tipo de Item:</label>
+                    <select id="tipo-item" name="tipo-item" required>
+                        <option value="">Selecione...</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="alimentos">Alimentos</option>
+                        <option value="brinquedos">Brinquedos</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="outros">Outros</option>
+                    </select>
+    
+                    <label for="descricao">Descrição do Item:</label>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Detalhes do item..." required></textarea>
+    
+                    <label for="data-doacao">Escolha a Data da Doação:</label>
+                    <input type="date" id="data-doacao" name="data-doacao" required>
+    
+                    <button type="submit">Doar</button>
+                </form>
+            </section>
+            
+            <footer>
+                <p>&copy; 2024 Sistema de Doação - Todos os direitos reservados.</p>
+            </footer>
+        </main>
+    </div>
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
